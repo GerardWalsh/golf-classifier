@@ -8,6 +8,42 @@ CNN classifier to predict VW Golf models. Models currently supported:
 
 # Setup
 
-Tested on Ubuntu 18.04, CUDA 10.1, Tensforflow 2.x and Keras 2.3.
+Tested on Ubuntu 18.04, Driver Version: 430.64, CUDA 10.1, Tensforflow 2.0.0 and Keras 2.3.1.
 
-* If you want to use the GPU backend for Tensorflow (and subsequently Keras), first install the drivers for your NVIDIA GPU - https://tech.amikelive.com/node-731/how-to-properly-install-nvidia-graphics-driver-on-ubuntu-16-04/
+## GPU
+
+ If you want to use the GPU backend for Tensorflow (and subsequently Keras), first install the following:
+
+* Driver: https://tech.amikelive.com/node-731/how-to-properly-install-nvidia-graphics-driver-on-ubuntu-16-04/
+
+* CUDA toolkit: https://tech.amikelive.com/node-859/installing-cuda-toolkit-9-2-on-ubuntu-16-04-fresh-install-install-by-removing-older-version-install-and-retain-old-version/
+
+* CUDNN: https://tech.amikelive.com/node-679/quick-tip-installing-cuda-deep-neural-network-7-cudnn-7-x-library-for-cuda-toolkit-9-1-on-ubuntu-16-04/
+
+* Follow the install instructions at https://www.tensorflow.org/install/pip?lang=python3, use a virtual environment and install with:
+
+```
+$ (venv) pip install --upgrade tensorflow-gpu
+```
+
+If the above GPU toolkits did not install successfully, try the instructions at https://www.tensorflow.org/install/gpu.
+
+## CPU
+
+Follow the install instructions at https://www.tensorflow.org/install/pip?lang=python3, once again use virtual environments and install with:
+
+```
+$ (venv) pip install --upgrade tensorflow
+```
+
+# Training
+
+To train the providided dataset, use: 
+
+```
+$ (venv) python train.py
+```
+
+# Testing
+
+A pretrained model is included. 
