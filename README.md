@@ -8,7 +8,7 @@ CNN classifier to predict VW Golf models. Models currently supported:
 
 # Setup
 
-Tested on Ubuntu 18.04, Driver Version: 430.64, CUDA 10.1, Tensforflow 2.0.0 and Keras 2.3.1.
+Tested and trained on Ubuntu 18.04, Driver Version: 430.64, CUDA 10.1, Tensforflow 2.0.0 and Keras 2.3.1.
 
 ## GPU
 
