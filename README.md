@@ -36,6 +36,14 @@ Follow the install instructions at https://www.tensorflow.org/install/pip?lang=p
 $ (venv) pip install --upgrade tensorflow
 ```
 
+## Finally
+
+Install the Python packages with:
+
+```
+$ (venv) pip install -r requirements.txt
+```
+
 # Training
 
 To train the providided dataset, use: 
