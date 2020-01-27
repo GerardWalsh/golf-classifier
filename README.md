@@ -54,4 +54,4 @@ $ (venv) python train.py
 
 # Testing
 
-A pretrained model is included. 
+A pretrained model is to be included. 
