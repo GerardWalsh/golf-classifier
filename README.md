@@ -25,6 +25,7 @@ To train the providided dataset, use:
 ```
 $ (venv) python train.py
 ```
+Note: Training script is now behind the latest model notebook "golf_classifier_final_model.ipynb". 
 
 # Testing
 
